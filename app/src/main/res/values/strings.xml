@@ -1,0 +1,55 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Localzet Meet</string>
+    <string name="app_tagline">Ит из май апп :)</string>
+
+    <string name="app_intro_meeting_title">Видеоконференции</string>
+    <string name="app_intro_meeting_desc">Совещайтесь и работайте дистанционно</string>
+    <string name="app_intro_chat_title">Общайтесь с командой</string>
+    <string name="app_intro_chat_desc">Отправляйте сообщения, если не хотите включать микрофон</string>
+    <string name="app_intro_meeting_history_title">История видеовстреч</string>
+    <string name="app_intro_meeting_history_desc">Листайте историю и возвращайтесь в комнаты, если нужно</string>
+
+    <string name="authentication_sign_in_email">Вход через почту</string>
+    <string name="authentication_sign_in_google">Вход через Google</string>
+    <string name="authentication_login_canceled">Вход отменён</string>
+
+    <string name="main_join_meeting">Подключиться</string>
+    <string name="main_enter_meeting_code">Введите код комнаты</string>
+    <string name="main_btn_join_meeting">Подключиться</string>
+
+    <string name="main_create_meeting">Создать</string>
+    <string name="main_meeting_code">Код комнаты</string>
+    <string name="main_btn_create_meeting">Создать</string>
+
+    <string name="main_error_meeting_code_length">Минимальная разрешенная длина кода встречи: %1$d (пробелы не учитываются)</string>
+    <string name="main_share_meeting_code_title">Поделитесь кодом комнаты через</string>
+    <string name="main_share_meeting_code_desc">Нажмите на ссылку ниже, чтобы присоединиться к встрече :)\n%1$s</string>
+    <string name="main_meeting_code_copied">Код комнаты скопирован из буфера обмена</string>
+    <string name="main_empty_clipboard">Код комнаты не найден в буфере обмена</string>
+    <string name="main_error_fetch_dynamic_link">Не удалось получить данные по ссылке. Пожалуйста, введите код встречи вручную.</string>
+    <string name="main_error_create_dynamic_link">Ошибка при создании ссылки. Пожалуйста, попробуйте еще раз.</string>
+
+    <string name="meeting_history_rejoin">ВЕРНУТЬСЯ</string>
+    <string name="meeting_history_last_joined_time">Последнее посещение: %1$s</string>
+    <string name="meeting_history_toolbar_title">История</string>
+    <string name="meeting_history_delete_meetings">Удалить комнаты</string>
+    <string name="meeting_history_empty">История пуста. Создайте или присоединитесь к любой встрече с главного экрана.</string>
+    <string name="meeting_history_meeting_code_copied">Код комнаты скопирован в буфер обмена</string>
+
+    <string name="profile_sign_out">Выйти</string>
+    <string name="profile_user_not_authenticated">Пользователь не авторизован</string>
+    <string name="profile_dark_mode">Тёмная тема</string>
+    <string name="profile_dot_separator">\u2022</string>
+
+    <string name="all_skip">Пропустить</string>
+    <string name="all_error_internet_connectivity">Проверьте подключение к Интернету и повторите попытку</string>
+    <string name="all_error_unknown">Произошла неизвестная ошибка. Пожалуйста, попробуйте еще раз</string>
+    <string name="all_btn_sign_out">ВЫЙТИ</string>
+    <string name="all_btn_sign_in">ВОЙТИ</string>
+    <string name="all_privacy_policy">Политика конфиденциальности</string>
+    <string name="all_terms_of_service">Условия использования</string>
+    <string name="all_creating_meeting">Пожалуйста подождите, создание...</string>
+    <string name="all_joining_meeting">Пожалуйста подождите, подключение...</string>
+    <string name="all_rejoining_meeting">Пожалуйста подождите, переподключение...</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fastadapter_meeting_history_item_id" type="id" />
+    <item name="fastadapter_faqs_item_id" type="id" />
+</resources>
