@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <base href="">
+    <title>
+        Localzet Meet
+    </title>
+
+    <!-- About App -->
+    <meta name="application-name" content="Localzet Meet">
+    <meta name="language" content="RU">
+    <meta name="robots" content="index,follow">
+    <meta name="title" content="Localzet Meet">
+
+    <!-- About Creator App -->
+    <meta name="owner" content="Localzet Group">
+    <meta name="author" content="Ivan Zorin (ivan@zorin.space)">
+    <meta name="copyright" content="Zorin Projects S.P.">
+    <meta name="reply-to" content="support@localzet.com">
+
+    <!-- About System -->
+    <meta name="generator" content="Triangle Framework">
+    <meta name="server" content="GitHub Pages">
+
+    <!-- Cache&Content -->
+    <meta http-equiv="Expires" content="60" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Apple Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- SEO -->
+    <link rel="icon" type="image/svg+xml" href="https://cdn.localzet.com/public/media/localzet.svg">
+    <link rel="shortcut icon" type="image/svg+xml" href="https://cdn.localzet.com/public/media/localzet.svg">
+
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#12121200">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff00">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Nunito:100,200,300,400,500,600,700,800,900">
+
+    <style>
+        body {
+            background-color: #000;
+            font-family: Nunito, monospace !important;
+            font-weight: 600;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: calc(-50px + -2rem);
+        }
+
+
+        main img {
+            display: block;
+            -webkit-user-select: none;
+            transition: background-color 300ms;
+
+            max-width: 512px;
+            width: 12rem;
+        }
+
+        main h1 {
+            margin: 0;
+            color: #7b69c8;
+            /* font-size: 8.8rem; */
+            font-size: 4rem;
+        }
+
+        main span {
+            color: #FF7E00;
+            font-size: 1.5rem;
+            /* margin-top: -38px; */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none !important;
+            margin: 0 3px;
+            display: inline-block;
+        }
+
+        footer nav a {
+            color: #6e7681;
+            margin: 0 3px;
+        }
+
+        nav a b {
+            color: #7b69c8;
+        }
+
+        hr {
+            border-color: #7b69c8;
+            border-radius: 50%;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin-top: calc(-50px + -12rem);
+            }
+
+            main img {
+                margin: auto 5%;
+                width: 80%;
+                height: auto;
+            }
+        }
+
+        button {
+            background: #000;
+            border: #7b69c8 solid 2px;
+            color: #c1c1c1;
+            border-radius: 10px;
+            font-size: 1rem;
+            padding: 10px;
+            margin: 30px 10px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover {
+            /* border: #000 solid 2px; */
+            background: #7b69c8;
+            color: #000;
+        }
+    </style>
+
+    <script>
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        window.onload = function () {
+            var meetingCode = getParameterByName('meetingCode');
+            var contentDiv = document.getElementById('content');
+
+            if (meetingCode) {
+                contentDiv.innerHTML = `
+                <img alt="Logo" src="https://cdn.localzet.com/public/media/meet.png">
+                <h1>Localzet Meet</h1>
+                <span>Вас пригласили подключиться к конференции!</span>
+                <nav>
+                    <button onclick="window.location.href='https://localzet-dev.github.io/Meet/app-release.apk'" class="btn btn-primary mx-1">Скачать приложение</button>
+                    <button onclick="window.location.href='https://meet.jit.si/${meetingCode}'" class="btn btn-primary mx-1">Подключиться в Jitsi</button>
+                </nav>
+            `;
+            } else {
+                contentDiv.innerHTML = `
+                <img alt="Logo" src="https://cdn.localzet.com/public/media/meet.png">
+                <h1>Localzet Meet</h1>
+                <span>Совещайтесь и работайте дистанционно</span>
+                <nav>
+                    <button onclick="window.location.href='https://localzet-dev.github.io/Meet/app-release.apk'" class="btn btn-primary mx-1">Скачать для Андроид</button>
+                </nav>
+
+            `;
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <main id="content">
+    </main>
+    <footer>
+        <hr />
+        <nav>
+            <a href="https://official.localzet.com">Copyright <b>Zorin Projects S.P.</b></a>
+            <a href="https://github.com/localzet/server">Powered by <b>Localzet Server</b></a>
+        </nav>
+    </footer>
+</body>
